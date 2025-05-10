@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minecraft/screens/server_properties_page.dart';
 import 'server_page.dart';
 import 'profile_page.dart';
 
@@ -14,6 +15,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
 
   final List<Widget> _pages = const [
     ServerPage(),
+    ServerPropertiesPage(),
     ProfilePage(),
   ];
 
@@ -39,9 +41,14 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
             label: '서버',
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.account_tree),
+            label: '설정',
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: '내 정보',
           ),
+
         ],
       ),
     );
