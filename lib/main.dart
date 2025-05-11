@@ -4,7 +4,7 @@ import 'screens/navigation/main_navigation_page.dart';
 
 
 Future<void> main() async {
-  await dotenv.load();
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
