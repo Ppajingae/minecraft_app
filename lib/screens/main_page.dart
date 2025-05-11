@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minecraft/screens/server_properties_page.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -98,14 +99,6 @@ class MainPage extends StatelessWidget {
                   ListTile(
                     leading: const Icon(Icons.download),
                     title: Text('Download World', style: TextStyle(color: textColor)),
-                    onTap: () {
-                      // call /download
-                    },
-                  ),
-                  const Divider(height: 1),
-                  ListTile(
-                    leading: const Icon(Icons.account_tree),
-                    title: Text('update Properties', style: TextStyle(color: textColor)),
                     onTap: () {
                       // call /download
                     },
